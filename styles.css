@@ -96,6 +96,13 @@ body{
 	cursor: pointer;
 }
 
+.btn:disabled,
+.btn[disabled]{
+	background-color: hsl(220, 10%, 30%);
+	cursor: default;
+	box-shadow: none;
+}
+
 .btn-directional{
 	background-color: hsl(300, 25%, 25%);
 	border: 0;
@@ -108,4 +115,11 @@ body{
 	background-color: hsl(300, 20%, 20%);
 	box-shadow: 0 0 5px 0 #000a;
 	cursor: pointer;
+}
+
+.btn-directional:disabled,
+.btn-directional[disabled]{
+	background-color: hsl(300, 10%, 30%);
+	cursor: default;
+	box-shadow: none;
 }
