@@ -1,5 +1,6 @@
 function startUp() {
 	var gameData = {
+		pageId = 0
 		pc:{
 			name: "",
 			height: 0,
@@ -7,8 +8,27 @@ function startUp() {
 			fat: 0,
 			intelligence: 0,
 			wisdom: 0,
-			charisma: 0
+			charisma: 0,
+			penis: {}
+			balls: {}
+			breasts: {}
+			vagina: {}
+			inventory: {}
 		}
 	};
-	alert("test");
+	document.getElementById("1-text").innerHTML = "SAUCE";
+	nextPage();
+}
+
+function nextPage() {
+	var button = document.getElementsByClassName("mainButton");
+	var i;
+	for (i = 0; i < button.length; i++) {
+		if (button[i].innerText === "") {
+			button[i].disabled = true;
+		}
+	}
+}
+
+function pages() {
 }
